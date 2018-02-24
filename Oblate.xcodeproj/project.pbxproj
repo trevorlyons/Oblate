@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70262A305305D52E86706BE3 /* Pods_Oblate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A1125E67F47D41B56B920A /* Pods_Oblate.framework */; };
 		8C3ACA5A20417F150056B4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACA5920417F150056B4E8 /* AppDelegate.swift */; };
-		8C3ACA5C20417F150056B4E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACA5B20417F150056B4E8 /* ViewController.swift */; };
+		8C3ACA5C20417F150056B4E8 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACA5B20417F150056B4E8 /* MainVC.swift */; };
 		8C3ACA5F20417F150056B4E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACA5D20417F150056B4E8 /* Main.storyboard */; };
 		8C3ACA6220417F150056B4E8 /* Oblate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACA6020417F150056B4E8 /* Oblate.xcdatamodeld */; };
 		8C3ACA6420417F150056B4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACA6320417F150056B4E8 /* Assets.xcassets */; };
 		8C3ACA6720417F150056B4E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACA6520417F150056B4E8 /* LaunchScreen.storyboard */; };
+		8C3ACA73204193570056B4E8 /* LanguageTranslatorV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3ACA72204193570056B4E8 /* LanguageTranslatorV2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E1F2F0EC723FD208E6B1087 /* Pods-Oblate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oblate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Oblate/Pods-Oblate.release.xcconfig"; sourceTree = "<group>"; };
 		8C3ACA5620417F150056B4E8 /* Oblate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oblate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3ACA5920417F150056B4E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C3ACA5B20417F150056B4E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C3ACA5B20417F150056B4E8 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		8C3ACA5E20417F150056B4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C3ACA6120417F150056B4E8 /* Oblate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Oblate.xcdatamodel; sourceTree = "<group>"; };
 		8C3ACA6320417F150056B4E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C3ACA6620417F150056B4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C3ACA6820417F150056B4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C3ACA72204193570056B4E8 /* LanguageTranslatorV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LanguageTranslatorV2.framework; path = Carthage/Build/iOS/LanguageTranslatorV2.framework; sourceTree = SOURCE_ROOT; };
+		92A1125E67F47D41B56B920A /* Pods_Oblate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oblate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE6A5BDC0FCD6FF77A1495F /* Pods-Oblate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oblate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Oblate/Pods-Oblate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C3ACA73204193570056B4E8 /* LanguageTranslatorV2.framework in Frameworks */,
+				70262A305305D52E86706BE3 /* Pods_Oblate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06F25655BA924D5FA35F95B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92A1125E67F47D41B56B920A /* Pods_Oblate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		716C781EA719DBE430A8EB0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEE6A5BDC0FCD6FF77A1495F /* Pods-Oblate.debug.xcconfig */,
+				2E1F2F0EC723FD208E6B1087 /* Pods-Oblate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8C3ACA4D20417F150056B4E8 = {
 			isa = PBXGroup;
 			children = (
 				8C3ACA5820417F150056B4E8 /* Oblate */,
 				8C3ACA5720417F150056B4E8 /* Products */,
+				716C781EA719DBE430A8EB0A /* Pods */,
+				06F25655BA924D5FA35F95B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +83,12 @@
 		8C3ACA5820417F150056B4E8 /* Oblate */ = {
 			isa = PBXGroup;
 			children = (
+				8C3ACA71204193320056B4E8 /* Frameworks */,
+				8C3ACA6E20417F4F0056B4E8 /* Model */,
+				8C3ACA6F20417F560056B4E8 /* View */,
+				8C3ACA7020417F5F0056B4E8 /* Controller */,
 				8C3ACA5920417F150056B4E8 /* AppDelegate.swift */,
-				8C3ACA5B20417F150056B4E8 /* ViewController.swift */,
+				8C3ACA5B20417F150056B4E8 /* MainVC.swift */,
 				8C3ACA5D20417F150056B4E8 /* Main.storyboard */,
 				8C3ACA6320417F150056B4E8 /* Assets.xcassets */,
 				8C3ACA6520417F150056B4E8 /* LaunchScreen.storyboard */,
@@ -67,6 +98,35 @@
 			path = Oblate;
 			sourceTree = "<group>";
 		};
+		8C3ACA6E20417F4F0056B4E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C3ACA6F20417F560056B4E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C3ACA7020417F5F0056B4E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8C3ACA71204193320056B4E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C3ACA72204193570056B4E8 /* LanguageTranslatorV2.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C3ACA6B20417F150056B4E8 /* Build configuration list for PBXNativeTarget "Oblate" */;
 			buildPhases = (
+				28F2A04E83BDA5BFD3411C7A /* [CP] Check Pods Manifest.lock */,
 				8C3ACA5220417F150056B4E8 /* Sources */,
 				8C3ACA5320417F150056B4E8 /* Frameworks */,
 				8C3ACA5420417F150056B4E8 /* Resources */,
+				5641323D368AF58C3DBAC802 /* [CP] Embed Pods Frameworks */,
+				7E71A9455C3AFE41190592D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,13 +197,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28F2A04E83BDA5BFD3411C7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Oblate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5641323D368AF58C3DBAC802 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Oblate/Pods-Oblate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oblate/Pods-Oblate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E71A9455C3AFE41190592D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oblate/Pods-Oblate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8C3ACA5220417F150056B4E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8C3ACA6220417F150056B4E8 /* Oblate.xcdatamodeld in Sources */,
-				8C3ACA5C20417F150056B4E8 /* ViewController.swift in Sources */,
+				8C3ACA5C20417F150056B4E8 /* MainVC.swift in Sources */,
 				8C3ACA5A20417F150056B4E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,10 +393,15 @@
 		};
 		8C3ACA6C20417F150056B4E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE6A5BDC0FCD6FF77A1495F /* Pods-Oblate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZZ5MUDVKJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Oblate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Trevorsapps.Oblate;
@@ -291,10 +413,15 @@
 		};
 		8C3ACA6D20417F150056B4E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1F2F0EC723FD208E6B1087 /* Pods-Oblate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZZ5MUDVKJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Oblate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Trevorsapps.Oblate;

@@ -10,4 +10,10 @@ import UIKit
 
 class GalleryCell: UICollectionViewCell {
     
+    @IBOutlet weak var galleryImage: UIImageView!
+    
+    func configureCell(thumb: Image) {
+        galleryImage.image = thumb.type as? UIImage
+    }
+
 }

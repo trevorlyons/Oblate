@@ -10,26 +10,41 @@ import UIKit
 
 class ImageVC: UIViewController {
 
+    @IBOutlet weak var objectImage: UIImageView!
+    @IBOutlet weak var inputWord: UILabel!
+    @IBOutlet weak var outputWord: UILabel!
+    @IBOutlet weak var outputLanguage: UILabel!
+    
+    var imageToEdit: Image?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        loadImageData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func loadImageData() {
+        if let photo = imageToEdit {
+            objectImage.image = photo.type as? UIImage
+            inputWord.text = photo.toTitle?.inputLanguage
+            outputWord.text = photo.toTitle?.outputLanguage
+            outputLanguage.text = photo.toTitle?.outputSelector
+        }
     }
-    */
 
+    @IBAction func editImagePressed(_ sender: Any) {
+    }
+    
+    @IBAction func deleteImagePressed(_ sender: Any) {
+        context.delete(imageToEdit!)
+        ad.saveContext()
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func sendImagePressed(_ sender: Any) {
+    }
+    
+    @IBAction func backPressed(_ sender: Any) {
+        dismiss(animated: false, completion: nil)
+    }
 }

@@ -2,7 +2,7 @@
 //  Image+CoreDataProperties.swift
 //  
 //
-//  Created by Trevor Lyons on 2018-03-05.
+//  Created by Trevor Lyons on 2018-03-06.
 //
 //
 
@@ -17,6 +17,7 @@ extension Image {
     }
 
     @NSManaged public var type: NSObject?
+    @NSManaged public var created: NSDate?
     @NSManaged public var toTitle: Title?
 
 }

@@ -9,25 +9,45 @@
 /* Begin PBXBuildFile section */
 		70262A305305D52E86706BE3 /* Pods_Oblate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A1125E67F47D41B56B920A /* Pods_Oblate.framework */; };
 		8C3ACA5A20417F150056B4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACA5920417F150056B4E8 /* AppDelegate.swift */; };
-		8C3ACA5C20417F150056B4E8 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACA5B20417F150056B4E8 /* MainVC.swift */; };
+		8C3ACA5C20417F150056B4E8 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACA5B20417F150056B4E8 /* CameraVC.swift */; };
 		8C3ACA5F20417F150056B4E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACA5D20417F150056B4E8 /* Main.storyboard */; };
 		8C3ACA6220417F150056B4E8 /* Oblate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACA6020417F150056B4E8 /* Oblate.xcdatamodeld */; };
 		8C3ACA6420417F150056B4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACA6320417F150056B4E8 /* Assets.xcassets */; };
 		8C3ACA6720417F150056B4E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3ACA6520417F150056B4E8 /* LaunchScreen.storyboard */; };
 		8C3ACA73204193570056B4E8 /* LanguageTranslatorV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3ACA72204193570056B4E8 /* LanguageTranslatorV2.framework */; };
+		8C3ACA76204197D00056B4E8 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACA75204197D00056B4E8 /* SqueezeNet.mlmodel */; };
+		8C3ACA792041BE700056B4E8 /* ImagePreviewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACA782041BE700056B4E8 /* ImagePreviewCircle.swift */; };
+		8CE374D4204C86800095931A /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE374D3204C86800095931A /* GalleryVC.swift */; };
+		8CE374D6204C8C7C0095931A /* GridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE374D5204C8C7C0095931A /* GridFlowLayout.swift */; };
+		8CE374D8204D2BF90095931A /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE374D7204D2BF90095931A /* GalleryCell.swift */; };
+		8CE374DA204D39F20095931A /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE374D9204D39F20095931A /* ImageVC.swift */; };
+		8CE7554E204EF79B00A59896 /* Title+CoreDataProperties copy 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7554A204EF79A00A59896 /* Title+CoreDataProperties copy 2.swift */; };
+		8CE7554F204EF79B00A59896 /* Title+CoreDataClass copy 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7554B204EF79B00A59896 /* Title+CoreDataClass copy 2.swift */; };
+		8CE75550204EF79B00A59896 /* Image+CoreDataClass copy 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7554C204EF79B00A59896 /* Image+CoreDataClass copy 2.swift */; };
+		8CE75551204EF79B00A59896 /* Image+CoreDataProperties copy 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7554D204EF79B00A59896 /* Image+CoreDataProperties copy 2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E1F2F0EC723FD208E6B1087 /* Pods-Oblate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oblate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Oblate/Pods-Oblate.release.xcconfig"; sourceTree = "<group>"; };
 		8C3ACA5620417F150056B4E8 /* Oblate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oblate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3ACA5920417F150056B4E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C3ACA5B20417F150056B4E8 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		8C3ACA5B20417F150056B4E8 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		8C3ACA5E20417F150056B4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C3ACA6120417F150056B4E8 /* Oblate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Oblate.xcdatamodel; sourceTree = "<group>"; };
 		8C3ACA6320417F150056B4E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C3ACA6620417F150056B4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C3ACA6820417F150056B4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C3ACA72204193570056B4E8 /* LanguageTranslatorV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LanguageTranslatorV2.framework; path = Carthage/Build/iOS/LanguageTranslatorV2.framework; sourceTree = SOURCE_ROOT; };
+		8C3ACA75204197D00056B4E8 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		8C3ACA782041BE700056B4E8 /* ImagePreviewCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewCircle.swift; sourceTree = "<group>"; };
+		8CE374D3204C86800095931A /* GalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
+		8CE374D5204C8C7C0095931A /* GridFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridFlowLayout.swift; sourceTree = "<group>"; };
+		8CE374D7204D2BF90095931A /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		8CE374D9204D39F20095931A /* ImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
+		8CE7554A204EF79A00A59896 /* Title+CoreDataProperties copy 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Title+CoreDataProperties copy 2.swift"; sourceTree = "<group>"; };
+		8CE7554B204EF79B00A59896 /* Title+CoreDataClass copy 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Title+CoreDataClass copy 2.swift"; sourceTree = "<group>"; };
+		8CE7554C204EF79B00A59896 /* Image+CoreDataClass copy 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass copy 2.swift"; sourceTree = "<group>"; };
+		8CE7554D204EF79B00A59896 /* Image+CoreDataProperties copy 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties copy 2.swift"; sourceTree = "<group>"; };
 		92A1125E67F47D41B56B920A /* Pods_Oblate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oblate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE6A5BDC0FCD6FF77A1495F /* Pods-Oblate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oblate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Oblate/Pods-Oblate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,12 +103,12 @@
 		8C3ACA5820417F150056B4E8 /* Oblate */ = {
 			isa = PBXGroup;
 			children = (
+				8C3ACA74204197B50056B4E8 /* Resources */,
 				8C3ACA71204193320056B4E8 /* Frameworks */,
 				8C3ACA6E20417F4F0056B4E8 /* Model */,
 				8C3ACA6F20417F560056B4E8 /* View */,
 				8C3ACA7020417F5F0056B4E8 /* Controller */,
 				8C3ACA5920417F150056B4E8 /* AppDelegate.swift */,
-				8C3ACA5B20417F150056B4E8 /* MainVC.swift */,
 				8C3ACA5D20417F150056B4E8 /* Main.storyboard */,
 				8C3ACA6320417F150056B4E8 /* Assets.xcassets */,
 				8C3ACA6520417F150056B4E8 /* LaunchScreen.storyboard */,
@@ -101,6 +121,10 @@
 		8C3ACA6E20417F4F0056B4E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8CE7554D204EF79B00A59896 /* Image+CoreDataProperties copy 2.swift */,
+				8CE7554C204EF79B00A59896 /* Image+CoreDataClass copy 2.swift */,
+				8CE7554B204EF79B00A59896 /* Title+CoreDataClass copy 2.swift */,
+				8CE7554A204EF79A00A59896 /* Title+CoreDataProperties copy 2.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +132,9 @@
 		8C3ACA6F20417F560056B4E8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8C3ACA782041BE700056B4E8 /* ImagePreviewCircle.swift */,
+				8CE374D5204C8C7C0095931A /* GridFlowLayout.swift */,
+				8CE374D7204D2BF90095931A /* GalleryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -115,6 +142,9 @@
 		8C3ACA7020417F5F0056B4E8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8C3ACA5B20417F150056B4E8 /* CameraVC.swift */,
+				8CE374D3204C86800095931A /* GalleryVC.swift */,
+				8CE374D9204D39F20095931A /* ImageVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -125,6 +155,14 @@
 				8C3ACA72204193570056B4E8 /* LanguageTranslatorV2.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C3ACA74204197B50056B4E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C3ACA75204197D00056B4E8 /* SqueezeNet.mlmodel */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +178,7 @@
 				8C3ACA5420417F150056B4E8 /* Resources */,
 				5641323D368AF58C3DBAC802 /* [CP] Embed Pods Frameworks */,
 				7E71A9455C3AFE41190592D4 /* [CP] Copy Pods Resources */,
+				8C3ACA772041AAD30056B4E8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -249,6 +288,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oblate/Pods-Oblate-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8C3ACA772041AAD30056B4E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/LanguageTranslatorV2.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,8 +310,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C3ACA6220417F150056B4E8 /* Oblate.xcdatamodeld in Sources */,
-				8C3ACA5C20417F150056B4E8 /* MainVC.swift in Sources */,
+				8CE374D4204C86800095931A /* GalleryVC.swift in Sources */,
+				8CE75550204EF79B00A59896 /* Image+CoreDataClass copy 2.swift in Sources */,
+				8CE7554E204EF79B00A59896 /* Title+CoreDataProperties copy 2.swift in Sources */,
+				8C3ACA5C20417F150056B4E8 /* CameraVC.swift in Sources */,
 				8C3ACA5A20417F150056B4E8 /* AppDelegate.swift in Sources */,
+				8CE374D8204D2BF90095931A /* GalleryCell.swift in Sources */,
+				8CE374D6204C8C7C0095931A /* GridFlowLayout.swift in Sources */,
+				8CE7554F204EF79B00A59896 /* Title+CoreDataClass copy 2.swift in Sources */,
+				8C3ACA792041BE700056B4E8 /* ImagePreviewCircle.swift in Sources */,
+				8CE75551204EF79B00A59896 /* Image+CoreDataProperties copy 2.swift in Sources */,
+				8C3ACA76204197D00056B4E8 /* SqueezeNet.mlmodel in Sources */,
+				8CE374DA204D39F20095931A /* ImageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -383,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -403,6 +466,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Oblate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Trevorsapps.Oblate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +487,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Oblate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Trevorsapps.Oblate;
 				PRODUCT_NAME = "$(TARGET_NAME)";

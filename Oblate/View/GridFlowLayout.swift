@@ -21,7 +21,7 @@ class GridFlowLayout: UICollectionViewFlowLayout {
     }
     
     func setup() {
-        minimumLineSpacing = 1.0
+        minimumLineSpacing = 5.0
         minimumInteritemSpacing = 1.0
         scrollDirection = .vertical
     }
@@ -30,7 +30,9 @@ class GridFlowLayout: UICollectionViewFlowLayout {
         set {}
         get {
             let numberOfColumns: CGFloat = 3
-            let itemWidth = (self.collectionView!.frame.width - (numberOfColumns - 1)) / numberOfColumns
+            let desiredSpacing: CGFloat = 5
+            let numberOfItemSpaces: CGFloat = numberOfColumns - 1
+            let itemWidth = (self.collectionView!.frame.width - (desiredSpacing * numberOfItemSpaces)) / numberOfColumns
             return CGSize(width: itemWidth, height: itemWidth)
         }
     }

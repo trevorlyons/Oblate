@@ -2,7 +2,7 @@
 //  Image+CoreDataProperties.swift
 //  
 //
-//  Created by Trevor Lyons on 2018-03-06.
+//  Created by Trevor Lyons on 2018-03-08.
 //
 //
 
@@ -16,8 +16,8 @@ extension Image {
         return NSFetchRequest<Image>(entityName: "Image")
     }
 
-    @NSManaged public var type: NSObject?
     @NSManaged public var created: NSDate?
+    @NSManaged public var type: NSObject?
     @NSManaged public var toTitle: Title?
 
 }

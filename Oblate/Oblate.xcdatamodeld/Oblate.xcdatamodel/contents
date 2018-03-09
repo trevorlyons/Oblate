@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D102" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Image" representedClassName="Image" syncable="YES">
         <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="Transformable" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <relationship name="toTitle" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Title" inverseName="toImage" inverseEntity="Title" syncable="YES"/>
     </entity>
+    <entity name="Setting" representedClassName="Setting" syncable="YES"/>
     <entity name="Title" representedClassName="Title" syncable="YES">
         <attribute name="inputLanguage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="outputLanguage" optional="YES" attributeType="String" syncable="YES"/>
@@ -13,6 +14,7 @@
     </entity>
     <elements>
         <element name="Image" positionX="142" positionY="6" width="128" height="90"/>
+        <element name="Setting" positionX="45" positionY="27" width="128" height="45"/>
         <element name="Title" positionX="-54" positionY="-9" width="128" height="105"/>
     </elements>
 </model>

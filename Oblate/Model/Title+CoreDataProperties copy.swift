@@ -2,7 +2,7 @@
 //  Title+CoreDataProperties.swift
 //  
 //
-//  Created by Trevor Lyons on 2018-03-06.
+//  Created by Trevor Lyons on 2018-03-08.
 //
 //
 
@@ -18,6 +18,7 @@ extension Title {
 
     @NSManaged public var inputLanguage: String?
     @NSManaged public var outputLanguage: String?
+    @NSManaged public var outputSelector: String?
     @NSManaged public var toImage: Image?
 
 }

@@ -31,6 +31,7 @@ class CameraVC: UIViewController {
     @IBOutlet weak var inputName: UILabel!
     @IBOutlet weak var outputName: UILabel!
     @IBOutlet weak var outputLanguage: UILabel!
+    @IBOutlet weak var outputLanguageView: UIView!
     
     var captureSession: AVCaptureSession!
     var cameraOutput: AVCapturePhotoOutput!
@@ -42,6 +43,7 @@ class CameraVC: UIViewController {
     var galleryButtonCenter: CGPoint!
     var imageLiked: Image?
     var controller: NSFetchedResultsController<Image>!
+    var index: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,18 +56,13 @@ class CameraVC: UIViewController {
         flashButton.center = menuButton.center
         galleryButton.center = menuButton.center
         
+        index = 52
+        UserDefaults.standard.register(defaults: ["languageIndex": index])
+        index = UserDefaults.standard.integer(forKey: "languageIndex")
+        outputLanguage.text = (languageArray[index].code).capitalized
+
 //        imagePreview.isHidden = true
         
-        
-//        let username = "e5fc2955-c10e-42e6-b759-ae63f1f0c3a6"
-//        let password = "GihGLUFS1DTJ"
-//        let languageTranslator = LanguageTranslator(username: username, password: password)
-//
-//        let failure = { (error: Error) in print(error) }
-//        languageTranslator.translate("Shit", from: "en", to: "es", failure: failure) {
-//            translation in
-//            print(translation)
-//        }
         
     }
     
@@ -134,7 +131,17 @@ class CameraVC: UIViewController {
 //        cameraOutput.capturePhoto(with: settings, delegate: self)
 //    }
     
-    
+    func translate(sentence: String, outputLang: String)  {
+        let username = "e5fc2955-c10e-42e6-b759-ae63f1f0c3a6"
+        let password = "GihGLUFS1DTJ"
+        let languageTranslator = LanguageTranslator(username: username, password: password)
+        
+        let failure = { (error: Error) in print(error) }
+        languageTranslator.translate(sentence, from: "en", to: outputLang, failure: failure) {
+            translation in
+            print(translation)
+        }
+    }
     
     @IBAction func menuPressed(_ sender: UIButton) {
         if menuButton.currentImage == #imageLiteral(resourceName: "menuClosed") {
@@ -162,6 +169,7 @@ class CameraVC: UIViewController {
     }
     
     @IBAction func settingsPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "toSettings", sender: self)
     }
     
     @IBAction func flashPressed(_ sender: UIButton) {
@@ -219,11 +227,41 @@ class CameraVC: UIViewController {
             
             debugPrint("Delete!")
         }
-
     }
     
     @IBAction func outputLanguageSelectorPressed(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "toPicker", sender: index)
+    }
+}
+
+
+extension CameraVC: UIPopoverPresentationControllerDelegate, LanguageIndex {
+    
+    func setLanguageArrayIndex(valueSent: Int) {
+        index = valueSent
+        outputLanguage.text = (languageArray[index].code).capitalized
+        UserDefaults.standard.set(index, forKey: "languageIndex")
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? PickerVC {
+            controller.preferredContentSize = CGSize(width: 200, height: 240)
+            controller.languageIndexDelegate = self
+            if let x = sender {
+                controller.currentLanguageIndex = x as! Int
+            }
+            let popoverController = controller.popoverPresentationController
+            if popoverController != nil {
+                popoverController?.delegate = self
+                popoverController?.sourceView = outputLanguageView
+                popoverController?.sourceRect = outputLanguageView.bounds
+            }
+        }
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+        return .none
     }
 }
 

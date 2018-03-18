@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'Oblate' do
     pod 'Alamofire', '~> 4.6'
+    pod 'SimplePDF'
 end

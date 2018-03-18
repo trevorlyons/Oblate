@@ -13,6 +13,7 @@ import Vision
 import LanguageTranslatorV2
 import CoreData
 
+
 enum flashState {
     case off
     case on

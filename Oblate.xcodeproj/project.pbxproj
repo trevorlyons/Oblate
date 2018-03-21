@@ -17,13 +17,13 @@
 		8C3ACA73204193570056B4E8 /* LanguageTranslatorV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3ACA72204193570056B4E8 /* LanguageTranslatorV2.framework */; };
 		8C3ACA76204197D00056B4E8 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACA75204197D00056B4E8 /* SqueezeNet.mlmodel */; };
 		8C3ACA792041BE700056B4E8 /* ImagePreviewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3ACA782041BE700056B4E8 /* ImagePreviewCircle.swift */; };
+		8C42C4BD206172CC0042BE57 /* Title+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C42C4BB206172CC0042BE57 /* Title+CoreDataProperties.swift */; };
+		8C42C4BE206172CC0042BE57 /* Title+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C42C4BC206172CC0042BE57 /* Title+CoreDataClass.swift */; };
 		8C4D9236205C2E6E002C1149 /* Oblate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C4D9234205C2E6E002C1149 /* Oblate.xcdatamodeld */; };
 		8C4D9238205ED03B002C1149 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4D9237205ED03B002C1149 /* EditVC.swift */; };
 		8CCE257B20516A9900ED84BB /* RoundedSideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE257A20516A9800ED84BB /* RoundedSideButton.swift */; };
 		8CCE257D20518FCE00ED84BB /* languageArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE257C20518FCE00ED84BB /* languageArray.swift */; };
 		8CCE259C2051D9C200ED84BB /* Image+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE25962051D9BF00ED84BB /* Image+CoreDataClass copy.swift */; };
-		8CCE259D2051D9C200ED84BB /* Title+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE25972051D9C000ED84BB /* Title+CoreDataClass copy.swift */; };
-		8CCE259E2051D9C200ED84BB /* Title+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE25982051D9C000ED84BB /* Title+CoreDataProperties copy.swift */; };
 		8CCE259F2051D9C200ED84BB /* Image+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE25992051D9C000ED84BB /* Image+CoreDataProperties copy.swift */; };
 		8CE374D4204C86800095931A /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE374D3204C86800095931A /* GalleryVC.swift */; };
 		8CE374D6204C8C7C0095931A /* GridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE374D5204C8C7C0095931A /* GridFlowLayout.swift */; };
@@ -47,13 +47,13 @@
 		8C3ACA72204193570056B4E8 /* LanguageTranslatorV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LanguageTranslatorV2.framework; path = Carthage/Build/iOS/LanguageTranslatorV2.framework; sourceTree = SOURCE_ROOT; };
 		8C3ACA75204197D00056B4E8 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 		8C3ACA782041BE700056B4E8 /* ImagePreviewCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewCircle.swift; sourceTree = "<group>"; };
+		8C42C4BB206172CC0042BE57 /* Title+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Title+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8C42C4BC206172CC0042BE57 /* Title+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Title+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8C4D9235205C2E6E002C1149 /* Oblate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Oblate.xcdatamodel; sourceTree = "<group>"; };
 		8C4D9237205ED03B002C1149 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 		8CCE257A20516A9800ED84BB /* RoundedSideButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedSideButton.swift; sourceTree = "<group>"; };
 		8CCE257C20518FCE00ED84BB /* languageArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = languageArray.swift; sourceTree = "<group>"; };
 		8CCE25962051D9BF00ED84BB /* Image+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass copy.swift"; sourceTree = "<group>"; };
-		8CCE25972051D9C000ED84BB /* Title+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Title+CoreDataClass copy.swift"; sourceTree = "<group>"; };
-		8CCE25982051D9C000ED84BB /* Title+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Title+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
 		8CCE25992051D9C000ED84BB /* Image+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
 		8CE374D3204C86800095931A /* GalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
 		8CE374D5204C8C7C0095931A /* GridFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridFlowLayout.swift; sourceTree = "<group>"; };
@@ -124,9 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				8CCE25992051D9C000ED84BB /* Image+CoreDataProperties copy.swift */,
-				8CCE25982051D9C000ED84BB /* Title+CoreDataProperties copy.swift */,
-				8CCE25972051D9C000ED84BB /* Title+CoreDataClass copy.swift */,
 				8CCE25962051D9BF00ED84BB /* Image+CoreDataClass copy.swift */,
+				8C42C4BC206172CC0042BE57 /* Title+CoreDataClass.swift */,
+				8C42C4BB206172CC0042BE57 /* Title+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -332,16 +332,16 @@
 				8C3ACA5A20417F150056B4E8 /* AppDelegate.swift in Sources */,
 				8C4D9236205C2E6E002C1149 /* Oblate.xcdatamodeld in Sources */,
 				8CE374D8204D2BF90095931A /* GalleryCell.swift in Sources */,
-				8CCE259E2051D9C200ED84BB /* Title+CoreDataProperties copy.swift in Sources */,
+				8C42C4BE206172CC0042BE57 /* Title+CoreDataClass.swift in Sources */,
 				8CCE257D20518FCE00ED84BB /* languageArray.swift in Sources */,
 				8CE374D6204C8C7C0095931A /* GridFlowLayout.swift in Sources */,
 				8C0F0FA22050438D00ACB935 /* PickerVC.swift in Sources */,
 				8C4D9238205ED03B002C1149 /* EditVC.swift in Sources */,
+				8C42C4BD206172CC0042BE57 /* Title+CoreDataProperties.swift in Sources */,
 				8CCE259C2051D9C200ED84BB /* Image+CoreDataClass copy.swift in Sources */,
 				8CCE259F2051D9C200ED84BB /* Image+CoreDataProperties copy.swift in Sources */,
 				8C3ACA792041BE700056B4E8 /* ImagePreviewCircle.swift in Sources */,
 				8C3ACA76204197D00056B4E8 /* SqueezeNet.mlmodel in Sources */,
-				8CCE259D2051D9C200ED84BB /* Title+CoreDataClass copy.swift in Sources */,
 				8CE374DA204D39F20095931A /* ImageVC.swift in Sources */,
 				8C0F0FA420504BBC00ACB935 /* SettingsVC.swift in Sources */,
 			);

@@ -36,7 +36,7 @@ class ImageVC: UIViewController {
     }
 
     @IBAction func editImagePressed(_ sender: Any) {
-        performSegue(withIdentifier: "toEdit", sender: self)
+        performSegue(withIdentifier: "toEdit", sender: outputLanguage.text)
     }
     
     @IBAction func deleteImagePressed(_ sender: Any) {
@@ -83,7 +83,6 @@ extension ImageVC: MFMailComposeViewControllerDelegate {
     
     func createPDF(inputText: String, outputText: String, image: UIImage) {
         
-        
         let sizeOfPDF = CGSize(width: screenSize.width, height: screenSize.height)
         let pdf = SimplePDF(pageSize: sizeOfPDF, pageMargin: 10.0)
         let textAttributes: [NSAttributedStringKey: Any] = [
@@ -109,12 +108,35 @@ extension ImageVC: MFMailComposeViewControllerDelegate {
 }
 
 
-extension ImageVC: UIPopoverPresentationControllerDelegate {
+extension ImageVC: UIPopoverPresentationControllerDelegate, EditObjectData {
+    
+    func EditCoreDataObject(inputText: String, outputText: String, outputLang: String) {
+        inputWord.text = inputText
+        outputWord.text = outputText
+        outputLanguage.text = outputLang
+        
+        var object: Image!
+        object = imageToEdit
+        if let input = inputWord.text {
+            object.toTitle?.inputLanguage = input
+        }
+        if let output = outputWord.text {
+            object.toTitle?.outputLanguage = output
+        }
+        if let outputLang = outputLanguage.text {
+            object.toTitle?.outputSelector = outputLang
+        }
+        ad.saveContext()
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let controller = segue.destination as? EditVC {
-            controller.preferredContentSize = CGSize(width: screenSize.width * 0.9, height: 200)
-            
+            controller.preferredContentSize = CGSize(width: 300, height: 220)
+            controller.EditObjectDelegate = self
+            if let x = sender {
+                controller.currentLanguageCode = x as! String
+            }
             let popoverController = controller.popoverPresentationController
             if popoverController != nil {
                 popoverController?.delegate = self

@@ -24,7 +24,7 @@ class PickerVC: UIViewController {
         
         picker.dataSource = self
         picker.delegate = self
-        picker.selectRow(currentLanguageIndex, inComponent: 0, animated: false)
+        picker.selectRow(currentLanguageIndex ?? 0, inComponent: 0, animated: false)
 
     }
     

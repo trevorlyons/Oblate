@@ -242,7 +242,6 @@ extension CameraVC: UIPopoverPresentationControllerDelegate, LanguageIndex {
         index = valueSent
         outputLanguage.text = (languageArray[index].code).capitalized
         UserDefaults.standard.set(index, forKey: "languageIndex")
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

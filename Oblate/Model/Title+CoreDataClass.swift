@@ -2,7 +2,7 @@
 //  Title+CoreDataClass.swift
 //  
 //
-//  Created by Trevor Lyons on 2018-03-08.
+//  Created by Trevor Lyons on 2018-03-20.
 //
 //
 
